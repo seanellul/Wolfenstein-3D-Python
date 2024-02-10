@@ -80,7 +80,6 @@ class RayCasting:
                     break
                 x_vert += dx
                 y_vert += dy
-
                 depth_vert += delta_depth
 
             # depth, texture offset
