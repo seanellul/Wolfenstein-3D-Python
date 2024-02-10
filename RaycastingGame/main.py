@@ -32,6 +32,7 @@ class Game:
         self.weapon = Weapon(self)
         self.sound = Sound(self)
         self.pathfinding = Pathfinding(self)
+        pg.mixer.music.play(-1)
 
     def update(self):
         self.player.update()
@@ -57,7 +58,6 @@ class Game:
                 sys.exit()
             elif event.type == self.global_event:
                 self.global_trigger = True
-                print('SET TO TRUE!')
             self.player.single_fire_event(event)
 
     def run(self):
