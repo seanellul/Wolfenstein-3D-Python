@@ -19,7 +19,7 @@ class Game:
         self.delta_time = 1
         self.global_trigger = False
         self.global_event = pg.USEREVENT + 0
-        pg.time.set_timer(self.global_event, 40)
+        pg.time.set_timer(self.global_event, 80)
         self.new_game()
 
     def new_game(self):
