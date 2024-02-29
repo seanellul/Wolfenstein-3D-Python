@@ -36,6 +36,7 @@ class Game:
 
     def update(self):
         print('Test')
+        print('Yet anotha test')
         self.player.update()
         self.raycasting.update()
         self.object_handler.update()
