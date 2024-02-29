@@ -35,6 +35,7 @@ class Game:
         pg.mixer.music.play(-1)
 
     def update(self):
+        print('Test')
         self.player.update()
         self.raycasting.update()
         self.object_handler.update()
@@ -44,11 +45,11 @@ class Game:
         pg.display.set_caption(f'{self.clock.get_fps() :.1f}')
 
     def draw(self):
-        # self.screen.fill('black')
-        self.object_renderer.draw()
-        self.weapon.draw()
-        # self.map.draw()
-        # self.player.draw()
+        self.screen.fill('black')
+        # self.object_renderer.draw()
+        # self.weapon.draw()
+        self.map.draw()
+        self.player.draw()
 
     def check_events(self):
         self.global_trigger = False
